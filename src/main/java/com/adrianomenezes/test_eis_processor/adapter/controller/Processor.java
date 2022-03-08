@@ -1,4 +1,4 @@
-package com.adrianomenezes.test_eis_processor.api.controller;
+package com.adrianomenezes.test_eis_processor.adapter.controller;
 
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.springframework.beans.factory.annotation.Autowired;

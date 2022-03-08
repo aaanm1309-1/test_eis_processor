@@ -17,4 +17,10 @@ spring:
       retry:
         await:
           time: 2000
-      group-id: satex-db2-consumer-dev
+      group-id: processor-consumer
+
+topic:
+  name:
+    processor: word_topic
+
+

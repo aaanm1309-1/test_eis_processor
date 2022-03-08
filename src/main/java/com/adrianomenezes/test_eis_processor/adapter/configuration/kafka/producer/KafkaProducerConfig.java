@@ -1,4 +1,4 @@
-package com.adrianomenezes.test_eis_processor.api.adapter.configuration.kafka.producer;
+package com.adrianomenezes.test_eis_processor.adapter.configuration.kafka.producer;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
