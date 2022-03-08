@@ -1,4 +1,4 @@
-package com.adrianomenezes.test_eis.api.controller;
+package com.adrianomenezes.test_eis_processor.api.controller;
 
 import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.KafkaProducer;

@@ -1,4 +1,4 @@
-package com.adrianomenezes.test_eis.api.adapter.configuration.kafka.consumer;
+package com.adrianomenezes.test_eis_processor.api.adapter.configuration.kafka.consumer;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
