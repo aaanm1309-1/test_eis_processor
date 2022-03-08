@@ -1,7 +1,5 @@
 package com.adrianomenezes.test_eis_processor.api.controller;
 
-import org.apache.kafka.clients.producer.Callback;
-import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,7 +11,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping(value = "/words")
-public class Client {
+public class Processor {
 
     @Autowired
     private KafkaTemplate<String, String> producerRecord;

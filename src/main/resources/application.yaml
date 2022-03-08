@@ -1,3 +1,5 @@
+server:
+  port: 8081
 
 astra:
   application-token: AstraCS:EjEcQzKBMUltOMdaypCMYYFa:6bdfd4eee6c27445f4bee151faa77ae70922c4d64819ba312040216933255c3b

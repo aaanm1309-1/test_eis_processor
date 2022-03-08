@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.adrianomenezes</groupId>
-	<artifactId>test_eis</artifactId>
+	<artifactId>test_eis_processor</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>test_eis</name>
+	<name>test_eis_processor</name>
 	<description>Test for Eis</description>
 	<properties>
 		<java.version>11</java.version>
