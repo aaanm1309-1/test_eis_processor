@@ -36,7 +36,7 @@ public class ProcessorService {
 
     private void executeEvent(String payload) {
         var key = "word_result";
-        var record = new ProducerRecord<String, String>("word_result_topic", key, payload);
+        var record = new ProducerRecord<String, String>("word_result_topic", key, payload.replaceAll("\"",""));
 
         producer.send(record);
         log.info("Evento Executado");

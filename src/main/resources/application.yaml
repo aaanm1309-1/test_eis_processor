@@ -1,12 +1,6 @@
 server:
   port: 8081
 
-astra:
-  application-token: AstraCS:EjEcQzKBMUltOMdaypCMYYFa:6bdfd4eee6c27445f4bee151faa77ae70922c4d64819ba312040216933255c3b
-  database-id: 826d5889-2fbf-46d4-b320-c04ead0f74b5
-  database-region: us-east1
-  keyspace: firstkeyspace
-
 spring:
   kafka:
     consumer:
@@ -18,6 +12,11 @@ spring:
         await:
           time: 2000
       group-id: processor-consumer
+    streams:
+      application-id: kafka-demo
+      properties:
+        default.key.serde: org.apache.kafka.common.serialization.Serdes$LongSerde
+        default.value.serde: io.confluent.kafka.streams.serdes.avro.GenericAvroSerde
 
 topic:
   name:

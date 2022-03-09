@@ -7,28 +7,19 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
-
 @RestController
 @RequestMapping(value = "/words")
-public class Processor {
+public class ProcessorController {
 
     @Autowired
     private KafkaTemplate<String, String> producerRecord;
 
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
-    public ResponseEntity<Object> sendWords( @Valid @RequestParam(value = "word") String word) {
+    public ResponseEntity<Object> sendWords(  @RequestParam(value = "word") String word) {
 
         var key = "word";
         var record = new ProducerRecord<String, String>("word_topic", key, word);
-//        Callback callback = (data, ex) -> {
-//            if (ex != null) {
-//                ex.printStackTrace();
-//                return;
-//            }
-//            System.out.println("Mensagem enviada com sucesso para: " + data.topic() + " | partition " + data.partition() + "| offset " + data.offset() + "| tempo " + data.timestamp());
-//        };
 
         producerRecord.send(record);
 
