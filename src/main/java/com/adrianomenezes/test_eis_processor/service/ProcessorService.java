@@ -20,10 +20,7 @@ public class ProcessorService {
 
         try {
 
-            if(true)
-                executeEvent(payload);
-            else
-                log.info("Newer event already at database");
+            executeEvent(payload);
 
             log.info("Event finished for message: " + payload);
 
